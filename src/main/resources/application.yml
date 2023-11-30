@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+logging:
+  level:
+    com: ERROR
+    org:
+      springframework:
+        web: debug
+      hibernate: ERROR
+  file:
+    name: demo.log
+server:
+  port : 8080

@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/emlakjet
+    username: root
+    password: password
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+application:
+  billing:
+    limit: 200
