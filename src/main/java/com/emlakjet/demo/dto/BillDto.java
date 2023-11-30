@@ -9,5 +9,9 @@ import lombok.Setter;
 public class BillDto extends AbstractDtoId {
     private String billNo;
     private String productName;
-    private float amount;
+    private double amount;
+    private String name;
+    private String lastname;
+    private String email;
+    private Boolean isAccepted;
 }

@@ -16,8 +16,9 @@ public class Bill extends AbstractEntityId {
     private String billNo;
     @Column(name="product_name")
     private String productName;
-    private float amount;
+    private double amount;
     private String name;
     private String lastname;
     private String email;
+    private Boolean isAccepted = Boolean.TRUE;
 }
