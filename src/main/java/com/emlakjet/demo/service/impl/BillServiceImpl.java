@@ -12,6 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import static com.emlakjet.demo.common.i18n.TranslationUtil.BILL_LIMIT_EXCEED;
+import static com.emlakjet.demo.common.i18n.Translator.toLocale;
+
 @Service
 @RequiredArgsConstructor
 public class BillServiceImpl implements BillService {
@@ -24,7 +27,7 @@ public class BillServiceImpl implements BillService {
     public CreateBillResponse createBill(CreateBillRequest request) {
         var totalAmount = billRepository.getSumOfAmounts(request.getEmail());
         if (totalAmount + request.getAmount() >= LIMIT) {
-            throw new EmlakjetException(Code.BILL_LIMIT_EXCEED, "Billing Limit exceed");
+            throw new EmlakjetException(Code.BILL_LIMIT_EXCEED, toLocale(BILL_LIMIT_EXCEED));
         }
         billRepository.save(Mapper.map(request, Bill.class));
 
