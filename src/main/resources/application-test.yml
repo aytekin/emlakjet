@@ -13,6 +13,7 @@ spring:
     init:
       platform: postgres
 application:
+  base-url: localhost:8080
   billing:
     limit: 200
   messages:
