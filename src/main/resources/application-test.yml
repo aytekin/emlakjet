@@ -5,8 +5,8 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:postgresql://localhost:5432/emlakjet
-    username: root
+    url: jdbc:postgresql://emlakjet_postgres:5432/emlakjet
+    username: postgres
     password: password
     driverClassName: org.postgresql.Driver
   sql:
