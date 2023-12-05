@@ -3,12 +3,14 @@ package com.emlakjet.demo.dto.request;
 import com.emlakjet.demo.common.util.ToLowerCaseConverter;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateBillRequest {

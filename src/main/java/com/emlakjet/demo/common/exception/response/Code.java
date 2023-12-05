@@ -15,6 +15,8 @@ public class Code {
      * Business Exception Codes
      */
     public static final Integer BILL_LIMIT_EXCEED = 9000001;
+    public static final Integer EXPIRED_JWT_TOKEN = 9000002;
+    public static final Integer INVALID_JWT_TOKEN = 9000003;
 
 
 }

@@ -19,3 +19,12 @@ application:
   messages:
     base-name: message
     default-locale: tr
+
+security:
+  jwt:
+    access-token:
+      secret-key: mZq4t7w9z$C&F)J@NcRfUjXn2r5u8x/A
+      expire-ms: 2592000000
+    refresh-token:
+      secret-key: D*G-KaPdSgVkYp3s6v9y$B&E(H+MbQeT
+      expire-ms: 86400000000

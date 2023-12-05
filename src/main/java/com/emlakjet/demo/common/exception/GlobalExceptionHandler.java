@@ -23,8 +23,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ResponseBody
     public ResponseBean<Object> exceptionHandler(Exception e) {
-        log.error("Server Exception : {0}", e);
-        log.trace("Server Exception : {0}", e);
+        log.error("Server Exception : {}", e);
         return new ResponseBean<>(Code.SERVER_ERROR, e.getMessage());
     }
 

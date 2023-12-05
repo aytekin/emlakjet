@@ -23,11 +23,11 @@ public class AppRunner implements ApplicationRunner {
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     private final UserRepository userRepository;
-    private static final String PASSWORD = "password";
+    private static final String PASSWORD = "Password.123";
     private final List<UserDto> USER_LIST = Arrays.asList(
-            UserDto.builder().name("John").lastname("Doe").email("John@doe.com").build(),
-            UserDto.builder().name("Jane").lastname("Doe").email("Jane@doe.com").build(),
-            UserDto.builder().name("John").lastname("Doe").email("John2@doe.com").build()
+            UserDto.builder().name("John").lastname("Doe").email("john@doe.com").build(),
+            UserDto.builder().name("Jane").lastname("Doe").email("jane@doe.com").build(),
+            UserDto.builder().name("John").lastname("Doe").email("john2@doe.com").build()
     );
 
 

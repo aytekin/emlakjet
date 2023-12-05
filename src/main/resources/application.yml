@@ -3,12 +3,6 @@ spring:
     active: dev
 logging:
   level:
-    com: ERROR
-    org:
-      springframework:
-        web: debug
-      hibernate: ERROR
-  file:
-    name: demo.log
+    web: error
 server:
   port : 8080
